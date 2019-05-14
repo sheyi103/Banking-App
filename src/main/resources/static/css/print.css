@@ -1,0 +1,85 @@
+body {
+	color: black;
+	background: white;
+}
+
+a:link,a:visited {
+	background: white;
+	color: black;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+img{
+	display: none;
+}
+
+H1,H2,H3 {
+	background: white;
+	color: black;
+	padding-bottom: 1px;
+	border-bottom: 1px solid gray;
+}
+
+body,div,dd,dt,dl,img,table,tr,td,h1,h2,h3,h4,h5,form,hr,fieldset {
+	color: black;
+	clear: both;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+/*	max-width: 650px;*/ /*Chun Wah edited-IR419972 */
+	float: none !important; 
+	*width: 650px; /* target IE 6 & 7 */
+	*float: left !important; /* target IE 6 & 7 */
+}
+
+#header, #leftbar, #footer {
+	display: none;
+}
+
+div.leftbar, div.hide4print {
+	display: none;
+}
+
+div.scrollpane {
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+div.pagebanner {
+	text-align: center;
+	font-weight:bold;
+	float: none !important;
+}
+
+div.pagelinks {
+	text-align: center;
+	float: none !important;
+}
+
+fieldset {
+	margin: 0px;
+	max-width: 650px;
+	border: 1px solid white;
+	color: black;
+}
+
+fieldset.hide4print {
+	display: none;
+}
+
+legend {
+	margin: 0px;
+	padding: 0px;
+	color: black;
+}
+
+input.button {
+	display: none;
+}
+
+table.results {
+	margin: 0px;
+	border-color: black;
+}

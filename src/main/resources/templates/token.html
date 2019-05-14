@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/header :: common-header" />
+<body roleId="page-top" data-spy="scroll"
+	data-target=".navbar-fixed-top">
+<head th:replace="common/header :: navbar" />
+<div class="container fluid ">
+	<div class="row pt-5">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4 pt-5 ">
+			<div class=" text-center alert alert-success">
+				<strong>Kindly Enter the OTCP Code for verification</strong>
+			</div>
+
+			<form class="form-signin" th:action="@{/token}" method="post"
+				onsubmit="return validate();">
+
+				<table class="loginTable" >
+					<tr>
+						<td><input style="font-size: 20pt;" type="text"
+							roleId="username" name="username" class="text-center"
+							id="username" required="required" autofocus="autofocus" /></td>
+							
+							
+						<td class="pl-5"><input class="btn btn-lg btn-danger" type="submit"
+							value="Submit" /></td>
+
+
+					</tr>
+				</table>
+			</form>
+			<div class=" text-center alert alert-default">
+				<strong>Don't have OTCP Code </strong>
+				<br/>
+				<div class=" text-center alert alert-primary">
+				<p class="h5 display: block">For Further assistance,contact your financial institution.</p>
+			</div>
+			</div>
+			
+
+		</div>
+		<div class="col-xs-4"></div>
+	</div>
+</div>
+
+</body>
+</html>

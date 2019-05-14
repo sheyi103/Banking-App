@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="common/header :: common-header"/>
+<body roleId="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<head th:replace="common/header :: navbar"/>
+
+<div class=" text-center alert alert-success">
+  <strong>Please Wait..</strong>
+</div>
+<div class="container main">
+
+    <div class="row progress">
+    
+    <div class="bar"></div>
+
+        
+        </div> 
+        </div> 
+        <div th:replace="common/header :: footer"></div>
+      
+   <script src="/js/jquery.js"></script>	      
+ <script> 
+$(document).ready(function(e){ 
+	
+
+	var elem  = $('#pbar');
+ 	var cnt = 1; 
+	var width = 0; 
+    var id = setInterval(frame, 150);
+    function frame() { 
+     //	alert(cnt); 
+    //cnt++;	 
+        if (width >= 100) { 
+        
+          clearInterval(id); 
+           window.location.href = "token"; 
+            
+       } else { 
+           width++;  
+           elem.css('width',width+'%'); 
+           //elem.attr("gaffar","stuff"); 
+           //elem.style.width = width + '%';  
+       } 
+    }        
+
+}); 
+</script> 
+
+</body>
+</html>

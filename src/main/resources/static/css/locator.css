@@ -1,0 +1,212 @@
+html { height: 100%; }
+body { height: 100%; margin: 0; padding: 0; }
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+}
+.search_loading {
+    background: url("../images/common/ajax-loader-small.html") no-repeat scroll center center transparent;
+    height: 24px;
+    width: 33px;
+}
+/* pnl_locator */
+
+
+
+/* loc_search_container */
+
+.loc_search_container, .loc_map_container, .loc_map_home_container {
+    /*background-color: #F6F5F5;
+    border: 1px solid #E4E4E4;*/
+    margin: 10px 0;
+    padding: 20px 14px 15px;
+}
+.loc_search_container h2 {
+    color: #666666;
+    display: inline;
+    font-size: 1.167em;
+    margin-right: 5px;
+    font-weight: normal;
+    margin: 0;
+	float: left;
+}/*
+.loc_search_container input.txt_loc_search {
+    border: 1px solid #B6B6B6;
+    height: 16px;
+    padding: 3px 2px;
+    vertical-align: top;
+    width: 280px;
+	margin-top: 4px;
+}*/
+.loc_search_container input.txt_loc_search {
+    border: 1px solid #B6B6B6;
+    float: left;
+   /* height: 16px;*/
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -4px;
+    padding: 3px 2px;
+    vertical-align: top;
+    width: 330px;
+}
+.loc_search_container a.lnk_go {
+    /*background: url("../images/common/bg-search.png") no-repeat scroll left 50% transparent;*/
+    background-color:Green;
+    color:White;
+	cursor: pointer;
+	/*width:33px;
+	height: 24px;*/
+	display: block;
+	float: left;
+	margin-right:8px;
+	/*margin-top: -4px;*/
+}
+.loc_search_container span.label_note {
+    color: #999999;
+    margin: 0 10px;
+}
+.loc_search_container a.start_over {
+    color: #0099CC;
+    /*padding: 0 0 0 12px;*/
+	cursor: pointer;
+}
+
+/* loc_map_container */
+
+.loc_map_container {
+    padding: 10px;
+    position: relative;
+}
+.loc_map_container h2 {
+    color: #666666;
+    font-size: 1.167em;
+    margin: 4px 0 10px;
+    font-weight: normal;
+    line-height: 1.3em;
+}
+.loc_map_google { height: 450px;width:65%; float:left;}
+.loc_map_details {
+    float: left;
+    width: 32%; /*173px; */
+	padding-left: 15px;
+}
+.loc_map_details #px_branch {
+    padding-top: 10px;
+}
+ol.radio_list {
+    list-style-type: none;
+    margin: 0 0 25px;
+    padding: 0;
+}
+.loc_map_container ul.list {
+    margin: 0px;
+	padding-left: 5px;
+}
+.loc_map_container ul.list li {
+    line-height: 18px;
+    margin-bottom: 10px;
+	background: url("../../images/common/bullet.gif") no-repeat scroll 1px 8px transparent;
+    margin-bottom: 7px;
+    padding-left: 11px;
+	list-style: none;
+}
+
+/* loc_results_list */
+
+.loc_results_list { padding-bottom: 60px;}
+h2.search_results_header {
+    color: #666666;
+    font-weight: bold;
+    margin-bottom: 9px;
+    font-size: 1.5em;
+    margin: 1.3em 0 0.2em;
+    line-height: 1.3em;
+}
+h2.search_results_header span {
+    color: #A5A5A5;
+	font-size: 12px;
+}
+table.search_results {
+    width: 100%;
+}
+table.search_results th.first, table.search_results td.first {
+    border-left-color: #E4E4E4;
+}
+table.search_results th, table.search_results td {
+    border-color: #E4E4E4 #E4E4E4 #F1F0F0 #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+}
+table.search_results th {
+    background-color: #F6F5F5;
+    font-size: 1.167em;
+    padding: 7px 9px 8px;
+}
+table.search_results td {
+    padding: 3px 4px;
+}
+
+
+
+.px_loading{
+  display:block;
+  width:32px;
+  margin:10px auto;
+}
+.loc_map_container p {
+  font-size:11px;
+}
+
+.txt_location {
+   border: 1px solid #2c4056;
+}
+.ac_results {
+  padding: 0px;
+  border: 1px solid #2c4056;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.ac_results ul {
+  width: 100%;
+  list-style-position: outside;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ac_results iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  filter:mask();
+  width:3000px;
+  height:3000px;
+}
+.ac_results li {
+  margin: 0px;
+  padding: 2px 5px;
+  cursor: pointer;
+  display: block;
+  font: menu;
+  font-size: 12px;
+  overflow: hidden;
+  height: 15px;
+  text-align: left;
+}
+.ac_over {
+  background-color: #dfdfdf;
+}
+.pag_left{
+  float:left;
+}
+.pag_right{
+  float:right;
+}
+
+ul.box_icons { margin:-10px 0 0;height:20px;padding:0px;}
+ul.box_icons li { float:left;margin-right:10px;list-style:none;}
+.marker_label { /*background:url("../images/common/icon_bluesquare.png") no-repeat top left transparent;*/ background-color:Blue; width:20px;height:20px;line-height:20px;text-align:center;color:white;font-weight:bold;font-size:10px;}
